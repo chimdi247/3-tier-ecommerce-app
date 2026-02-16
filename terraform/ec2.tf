@@ -1,5 +1,5 @@
 data "aws_ami" "os_image" {
-  owners      = ["099720109477"]
+  owners      = ["099720109477"] 
   most_recent = true
   filter {
     name   = "state"
@@ -12,7 +12,7 @@ data "aws_ami" "os_image" {
 }
 
 resource "aws_key_pair" "deployer" {
-  key_name   = "terra-automate-key"
+  key_name   = "terra-key"
   public_key = file("terra-key.pub")
 }
 
@@ -61,7 +61,7 @@ resource "aws_instance" "testinstance" {
     Name = "Jenkins-Automate"
   }
   root_block_device {
-    volume_size = 20
+    volume_size = 30
     volume_type = "gp3"
   }
 
