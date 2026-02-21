@@ -1,5 +1,5 @@
 ---
-elasticsearchHosts: "https://elasticsearch-master:9200"
+elasticsearchHosts: "https://elasticsearch-master:9200"F
 elasticsearchCertificateSecret: elasticsearch-master-certs
 elasticsearchCertificateAuthoritiesFile: ca.crt
 elasticsearchCredentialSecret: elasticsearch-master-credentials
@@ -144,13 +144,13 @@ ingress:
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
     alb.ingress.kubernetes.io/backend-protocol: HTTP
-    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:ap-south-1:876997124628:certificate/b69bb6e7-cbd1-490b-b765-27574080f48c
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:eu-west-2:283104167597:certificate/e81685eb-31d2-4545-ad51-fd1a785415db
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP":80}, {"HTTPS":443}]'
     alb.ingress.kubernetes.io/ssl-redirect: '443'
   # kubernetes.io/ingress.class: nginx
   # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: logs-kibana.devopsdock.site
+    - host: logs-kibana.raph247.online
       paths:
         - path: /
   #tls: []
