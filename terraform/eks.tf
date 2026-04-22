@@ -31,7 +31,7 @@ module "eks" {
   access_entries = {
     # One access entry with a policy associated
     example = {
-      principal_arn = "arn:aws:iam::283104167597:root"
+      principal_arn = "arn:aws:iam::330177108585:root"
 
       policy_associations = {
         example = {
@@ -77,7 +77,7 @@ module "eks" {
 
   eks_managed_node_group_defaults = {
 
-    instance_types = ["t3.large"]
+    instance_types = ["m7i-flex.large"]
 
     attach_cluster_primary_security_group = true
 
@@ -88,11 +88,11 @@ module "eks" {
   eks_managed_node_groups = {
 
     tws-demo-ng = {
-      min_size     = 1
+      min_size     = 2
       max_size     = 3
-      desired_size = 1
+      desired_size = 2
 
-      instance_types = ["t3.large"]
+      instance_types = ["m7i-flex.large"]
       capacity_type  = "SPOT"
 
       disk_size                  = 35

@@ -41,4 +41,5 @@ variable "set_sensitive" {
 variable "repository" {
   description = "Helm repository"
   type        = string
+  
 }
