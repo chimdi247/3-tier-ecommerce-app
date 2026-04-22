@@ -2365,7 +2365,7 @@ server:
       # nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
       # nginx.ingress.kubernetes.io/ssl-passthrough: "true"
       alb.ingress.kubernetes.io/scheme: internet-facing
-      alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:ap-south-1:876997124628:certificate/b69bb6e7-cbd1-490b-b765-27574080f48c
+      alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:eu-west-2:330177108585:certificate/ff29df3e-70b5-41f9-8152-04d2dfdf38d7
       alb.ingress.kubernetes.io/group.name: easyshop-app-lb
       alb.ingress.kubernetes.io/target-type: ip
       alb.ingress.kubernetes.io/backend-protocol: HTTP
@@ -2377,7 +2377,7 @@ server:
 
     # -- Argo CD server hostname
     # @default -- `""` (defaults to global.domain)
-    hostname: argocd.devopsdock.site
+    hostname: argocd.raph247.online
 
     # -- The path to Argo CD server
     path: /
